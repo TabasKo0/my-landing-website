@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
 }
 
 li {
@@ -114,6 +116,7 @@ a:visited {
     justify-content: center;
     gap:5em;
     padding:5em;
+    flex-wrap: wrap;
 }
 
 
@@ -165,7 +168,7 @@ a:visited {
     justify-content: space-around;
     background-color: #3882F6;
     color:#F9FAF8;
-    width:80em;
+    width:70%;
     border-radius: 10px;
     padding:5em;
     margin:10em;
@@ -185,4 +188,17 @@ a:visited {
     padding: 2em;
     text-align: center;
     font-size: 24px;
+}
+
+.grid-cont{
+    display:grid;
+}
+
+@media only screen and (max-width: 600px) {
+  .head-pan{grid-area: 1 / span 6;}
+  .m-cont {grid-area: 2 / span 6;}
+  .lm-cont {grid-area: 3 / span 6;}
+  .q-cont {grid-area: 4 / span 6;}
+  .signup-cont {grid-area: 5 / span 6;}
+  .footer {grid-area: 6 / span 6;}
 }
